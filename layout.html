@@ -1,0 +1,269 @@
+<!--file name : layout.html-->
+<!--pwd : /project_name/app/templates/layout.html-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="{{ url_for('static', filename='css/layout_style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>WithOCR</title>
+</head>
+
+<body>
+  <header>
+    <a href="#home" class="logo">WithOCR</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#guide">Guide</a></li>
+      <li><a href="#terms">Terms of Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="textBx">
+      <h2>WithOCR,<br>
+        <span>WITH OCR(Optical character recognition, 광학 문자 인식)</span>
+      </h2>
+      <h3>이미지(사진) 속 글자 위치를 찾고 어떤 글자인지 자동으로 알아내는 기술입니다.</h3>
+      <a href="#about" class="btn">About WithOCR</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About WithOCR</h2>
+    </div>
+    <div class="content">
+      <div class="contentBx">
+        <h3>WidthOCR은 농협정보시스템에서 개발한 딥러닝 OCR모델</h3>
+        <p>WidthOCR은 농협정보시스템 신기술연구팀의 핵심인력 장용남 계장님께서 직접 개발한 딥러닝 OCR모델을 활용한
+          WidthOCR은 자체적으로 개발한 딥러닝 OCR모델을 활용한
+          WidthOCR은 자체적으로 개발한 딥러닝 OCR모델을 활용한
+          <br><br>WITH OCR은 독자적인 인공지능 기반 글자 영역 검출
+          및 인식 기술로 다양한 형태의 문서를 인식하고,
+          사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다.
+          문서인식 후에는 연결되는 워크플로우를 지정하여 효과적인 업무 처리가 가능합니다.<br><br>
+          WITH OCR은 독자적인 인공지능 기반 글자 영역 검출
+          및 인식 기술로 다양한 형태의 문서를 인식하고,
+          사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다.
+          문서인식 후에는 연결되는 워크플로우를 지정하여 효과적인 업무 처리가 가능합니다.
+          WITH OCR은 독자적인 인공지능 기반 글자 영역 검출
+          및 인식 기술로 다양한 형태의 문서를 인식하고,
+          사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다.
+          문서인식 후에는 연결되는 워크플로우를 지정하여 효과적인 업무 처리가 가능합니다.
+          WITH OCR은 독자적인 인공지능 기반 글자 영역 검출
+          및 인식 기술로 다양한 형태의 문서를 인식하고,
+          사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다.
+          문서인식 후에는 연결되는 워크플로우를 지정하여 효과적인 업무 처리가 가능합니다.<br><br>
+          WITH OCR은 독자적인 인공지능 기반 글자 영역 검출
+          및 인식 기술로 다양한 형태의 문서를 인식하고,
+          사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다.
+          문서인식 후에는 연결되는 워크플로우를 지정하여 효과적인 업무 처리가 가능합니다.
+        </p>
+      </div>
+      <div class="w50">
+        <img class="img" src="{{ url_for('static', filename='img/first_img_size.jpg') }}">
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="heading white">
+      <h4>Our Services</h4>
+      <p>General OCR 및 Template OCR 기능을 제공합니다.</p><br>
+    </div>
+    <div class="content">
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon1.png') }}">
+        <h2>General OCR</h2>
+        <p>문서에서 인식 가능한 모든 글자를 텍스트로 추출합니다. 블라블라블라
+          블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라...</p>
+      </div>
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon2.png') }}">
+        <h2>Template OCR</h2>
+        <p>사용자가 지정한 영역의 텍스트와 데이터를 정확하게 추출합니다. 블라블라블라...</p>
+      </div>
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon3.png') }}">
+        <h2>Multiple OCR</h2>
+        <p>서비스 예정입니다. 연구실 핵심인력 장용남 계장이 개발중입니다. 블라블라블라...</p>
+      </div>
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon4.png') }}">
+        <h2>General OCR</h2>
+        <p>문서에서 인식 가능한 모든 글자를 텍스트로 추출합니다. 블라블라블라...</p>
+      </div>
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon5.png') }}">
+        <h2>General OCR</h2>
+        <p>문서에서 인식 가능한 모든 글자를 텍스트로 추출합니다. 블라블라블라...</p>
+      </div>
+      <div class="servicesBx">
+        <img src="{{ url_for('static', filename='img/icon6.png') }}">
+        <h2>General OCR</h2>
+        <p>문서에서 인식 가능한 모든 글자를 텍스트로 추출합니다. 블라블라블라...</p>
+      </div>
+    </div>
+  </section>
+  <section class="guide" id="guide">
+    <div class="heading">
+      <h4>WithOCR Guide</h4>
+      <p>WithOCR을 사용을 위한 가이드를 다음과 안내드립니다.</p>
+    </div>
+    <div class="content">
+      <div class="workBx">
+        <img src="{{ url_for('static', filename='img/guide_img.jpg') }}">
+      </div>
+      <div class="heading">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
+  </section>
+  <section class="terms" id="terms">
+    <div class="heading">
+      <h4>Terms of Service</h4>
+      <p>이용약관 및 개인정보처리방침 안내</p>
+    </div>
+    <div class="content">
+      <div class="termsBx">
+        <h3>이용약관</h3><br>
+        <p>
+          제1조 (목적)<br>
+          이 약관은 농협정보시스템(이하"회사")에서 제공하는 WithOCR 서비스의 이용과 관련하여
+          "회사"와 "회원"과의 제반관리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.<br><br>
+          제2조 (용어의 정의)<br>
+          본 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+          서비스 : PC, 휴대형단말기 등의 각종 유무선 장치를 통해 회원에게 제공되는 WitchOCR 서비스를 의미합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          ......
+        </p>
+      </div>
+      <div class="termsBx">
+        <h3>개인정보처리방침</h3><br>
+        <p>
+          제1조 (목적)<br>
+          이 약관은 농협정보시스템(이하"회사")에서 제공하는 WithOCR 서비스의 이용과 관련하여
+          "회사"와 "회원"과의 제반관리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.<br><br>
+          제2조 (용어의 정의)<br>
+          본 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+          서비스 : PC, 휴대형단말기 등의 각종 유무선 장치를 통해 회원에게 제공되는 WitchOCR 서비스를 의미합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          회원 : "회사"의 서비스에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 서비스를 이용하는 모든 사용자를 말합니다.<br>
+          ......
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h4>Contact Us</h4>
+      <p>문의내용과 함께 연락처를 남겨주세요<br>
+        담당자가 빠르게 답변 드리겠습니다.</p>
+    </div>
+    <div class="content">
+      <div class="contactInfo">
+        <h4>Contact Info</h4>
+        <div class="contactInfoBx">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>서울특별시 서초구 매헌로 24 <br>농협양재전산센터 DT LAB<br>06771</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>02-3497-2739</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>jasonj9183@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBx">
+        <form>
+          <input type="text" name="" placeholder="Full Name" id="from_name">
+          <input type="email" name="" placeholder="Email" id="from_email">
+          <input type="text" name="" placeholder="Title" id="title">
+          <textarea placeholder="Your Message" id="message"></textarea>
+          <input type="submit" id="button" value="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">
+    <div class="nhit_ci">
+      <img class="nhit_ci_img" src="{{ url_for('static', filename='img/ci.png') }}">
+    </div>
+    <div>
+      <div>
+        ㈜농협정보시스템 │ 대표명: 이구환 │ 주소: 서울특별시 서초구 매헌로 24 농협양재전산센터<br>
+        Tel: 02-3497-2004 │ Fax: 02-3497-2199
+      </div>
+      <div class="copy_text">
+        Copyrightⓒ2022. NH Information System. All rights reserved.
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+
+    // 애러나는부분
+    window.onload = function() {
+      document.getElementById('form')
+        .addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          const serviceID = 'default_service';
+          const templateID = 'template_r9mnu9y';
+
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(function() {
+              console.log('SUCCESS!');
+            }, function(error) {
+              console.log('FAILED...', error);
+            });
+        });
+    }
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init('user_OpDvxoB9UM7J25QyAQE7F');
+    });
+  </script>
+</body>
+
+</html>
